@@ -1,0 +1,24 @@
+{
+  "name": "jipiS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "./node_modules/.bin/webpack --config webpack.config.js --watch",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "vanilla-lazyload": "^8.5.2"
+  }
+}

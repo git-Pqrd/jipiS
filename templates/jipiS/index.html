@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+
+{% block title %} || accueil {% endblock %}
+{% load render_bundle from webpack_loader %}
+
+
+{% block content %}
+
+  <div class="bgblock" id="bghaut">
+    <!-- juste le petit bout couleur glaise  -->
+
+    <div class="skewbar">
+      <!-- ici c'est l'intr le bout ou je met jp cerami.. -->
+      <div class="inner-content">
+
+
+        <h1>Jean-Pierre <br> HALLET</h1>
+        <h1>Céramiste<br> Autodidacte</h1>
+      </div>
+      <!-- ici c'est l'intr le bout ou je met jp cerami.. -->
+    </div>
+    <div class="imgdiv">
+      {% load static %}
+      <img id="img-jipi" src="{% static 'img/img-jipi.png' %}" alt="jeanpierre-hallet">
+    </div>
+    <div class="text-intro">
+
+    </div>
+
+    <!-- fin juste le petit bout couleur glaise  -->
+  </div>
+
+
+
+
+
+
+<div class="bgbio">
+
+  <div class="bgblock bg-block-second">
+
+    <div class="biographie">
+
+      <div class="title-biographie">
+        <h1>Biographie</h1></div>
+      <div class="text-biographie">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor.</h2>
+        Je n ai suivi aucune formation artistique,
+  et je travaille en autodidacte.
+  Je me revendique amateur, par respect pour ceux qui prennent l art au sérieux
+  A la base, je suis instituteur primaire.
+  Depuis plus de 30 ans j enseigne dans le spécialisé de type 3 et 8. C'est-à-dire à des enfants troublés affectifs, en décrochage scolaire ou ayant des problèmes de dyslexie, dyscalculie, dys…
+  Au cours de ma carrière, j ai eu l occasion d’expérimenter l art à l’école.
+  Au début par la peinture, et au fil du temps, le travail de la terre. Convaincu que l’art à l’école doit dépasser les stéréotypes du collier de nouilles, pour être un réel vecteur d’ expression et de construction de soi, porteur de sens, bien plus que la sacro sainte orthographe, ou les incontournables tables de multiplication.
+  La terre est venue s’imposer à moi tout naturellement, avec une force émotionnelle, tactile. Partir du rien, pour s’exprimer, se dire, s’écrire, et peut être se comprendre, s’apaiser. Un support d’expression idéal pour des enfants déchirés par la vie .
+  S’approprier un processus, des techniques,  au service du comprendre .
+  Comprendre qui je suis. Que de ce rien peut naître le beau. Mais pas seulement. C’est aussi ouvrir une porte à l’oser. Se reconnaitre dans la matière, et les éléments
+  Une démarche avant tout  instinctive et sensitive.
+  Je laisse le champ libre à cette merveilleuse sensation qu’est l’harmonie des sens.
+  Je me complais dans les formes rondes, moules du sein nourricier. La boule, c’est une certaine idée de l'infini, du mouvement perpétuel, de l'harmonie .C'est le confort du réconfort.
+
+  Verticalité instable, jeu d'équilibre car reflet de notre combat à rester maître de notre vie. Ainsi naissent les totems
+  Empilées comme le sont nos émotions, petites et grosses, composantes de notre moi, ces boules jaillissent de la mère terre.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="full-contact">
+
+
+  <div class="contact">
+    <div class="text-contact">
+      <h1>Contacter moi par : </h1>
+    </div>
+    <div class="contactmode">
+      <div  data-num="0" class="contactmodebtn" id="contactmail">Mail</div>
+      <div  data-num="1" class="contactmodebtn" id="contacttele">Téléphone</div>
+      <div  data-num="2" class="contactmodebtn" id="contactface">Facebook</div>
+    </div>
+  </div>
+
+  <div class="mailteleface">
+    <div  data-num="0" data-index="bon" class="test modeCom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quia, quisquam dolorem fugiat ab atque beatae voluptate inventore facilis iste eum, officiis voluptas porro deserunt rerum, officia culpa consectetur, in pariatur accusantium veniam aliquam itaque dolores. Maxime dolore doloremque iusto?</div>
+    <div  data-num="1" class="modeCom"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo pariatur eligendi cum vel, numquam nostrum ipsa iste, rerum corporis sit doloremque rem itaque quibusdam laboriosam odio, deserunt tempore quis obcaecati eaque fugiat! Placeat aut et dicta, autem, minima veritatis facere!</div>
+    <div  data-num="2" class="modeCom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde, reiciendis fugit aperiam accusamus voluptas necessitatibus fugiat iusto doloribus aliquam, esse aut, voluptates officia porro velit illum dicta enim omnis quo incidunt ad corporis saepe. Quasi facere impedit quia asperiores?</div>
+  </div>
+
+</div>
+
+
+
+<div class="oeuvres-lg">
+  <h1 style="text-align : center;">Mes oeuvres</h1>
+<div class="art-block">
+
+  <div class="art-oeuvre" id="art-oeuvre-1">
+    <div class="img"></div>
+
+    <div class="art-text">
+      <h3>Porteur de  lumiere</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor error pariatur at officiis necessitatibus illo impedit porro, et tenetur l</p>
+      <div data-num='0' class="btn">
+        Galerie
+      </div>
+
+    </div>
+
+  </div>
+  <div class="gal" id="gal1">
+    {% load static %}
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/300X600.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/600X300.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/300X600.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/300X600.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/300X600.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/300X600.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/600X300.png' %}"   alt="exemple de oeuvre1">
+    <img  class='lazyload' src="{% static 'img/loading.gif' %}" data-src="{% static 'img/300X600.png' %}"   alt="exemple de oeuvre1">
+  </div>
+</div>
+
+<div class="art-block">
+
+  <div class="art-oeuvre">
+    <div class="img"></div>
+
+    <div class="art-text">
+      <h3>Porteur de  lumiere</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor error pariatur at officiis necessitatibus illo impedit porro, et tenetur l</p>
+      <div data-num='1' class="btn" >
+        Galerie
+      </div>
+
+    </div>
+
+  </div>
+  <div class="gal ">
+    Chargement
+  </div>
+</div>
+
+
+
+<!-- fin de container contenant les oeuvres et le mot pour les lg  -->
+</div>
+
+
+<div class="motDeFin">
+  <h2>Merci de votre visite !</h2>
+  <p>j'espere vous avoir transmis mon amour du travail bien fait</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptas iure ipsam aspernatur, omnis delectus!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptas iure ipsam aspernatur, omnis delectus!</p>
+</div>
+
+
+
+
+<div class="footer">
+
+  <div class="left footer-part">
+    <ul>Plan du site
+      <li><a href=""></a>Accueil</li>
+      <li><a href=""></a>Biographie</li>
+      <li><a href=""></a>Oeuvre</li>
+      <li><a href=""></a>Contact</li>
+    </ul>
+  </div>
+  <div class="right footer-part">
+
+    <ul>
+      <li><a href="https://www.highoncafe.be" target="_blank">HighOnCafe.be</a></li>
+      <li>PIQUARD François</li>
+      <li>2017</li>
+      <li>Mentions légales</li>
+
+    </ul>
+
+  </div>
+</div>
+
+
+
+
+   {% render_bundle 'index' %}
+{% endblock content  %}
