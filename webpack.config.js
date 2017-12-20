@@ -7,7 +7,7 @@ module.exports = {
 
   entry: {
     index: './static_src/js/entreeIndex.js',
-    contact: './static_src/js/entreeContact.js'
+    jipiadmin: './static_src/js/entreejpadm.js'
   },
   // entry point of our app. assets/js/index.js should require other js modules and dependencies it needs
 

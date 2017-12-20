@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
-from . import views
+from jipiadmin import views
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
-    url('contact/', TemplateView.as_view(template_name="contact.html")),
-    url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^admin/', admin.site.urls),
+    url('jipiadmin/', views.ListIndex.as_view() , name='test' ),
+    url(r'^$', views.ListIndex.as_view() , name='index.html'),
 ]
