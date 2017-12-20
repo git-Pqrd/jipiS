@@ -1,0 +1,32 @@
+<div class="full-slider">
+
+  <div class="sliderbtncont slider-left">
+    <div  data-num="0" class="slidermodebtn" >TOTEM</div>
+    <div  data-num="1" class="slidermodebtn" >Photophore</div>
+
+  </div>
+
+  <div class="sliderbtncont slider-right">
+    <div  data-num="2" class="slidermodebtn" >Madame</div>
+    <div  data-num="3" class="slidermodebtn" >terre</div>
+  </div>
+
+  <div class="slider-moving">
+{% for event in events %}
+<div  data-num="event.pk" data-index="{% if True %}bon{% endif %}" class="modeCom">
+  {% include "snippets/eventcard.html" %}
+</div>
+{% endfor %}
+  <!--  <div  data-num="1" class="modeCom">
+      <div class="inner-card"></div>
+    </div>
+    <div  data-num="2" class="modeCom">
+      <div class="inner-card"></div>
+    </div>
+    <div  data-num="3" class="modeCom">
+      <div class="inner-card"></div> -->
+
+    </div>
+  </div>
+
+</div>

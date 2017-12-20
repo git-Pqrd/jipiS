@@ -1,0 +1,25 @@
+<div class="basecard">
+  <div class="e-map">
+    Directions
+  </div>
+  <div class="e-img">
+    <!-- <img src="" alt=""> -->
+  </div>
+  <div class="e-haut">
+    <h2>en bref : <br></h2>
+    <p>
+      {{event.description}}
+  </div>
+
+  <div class="e-bas">
+    <h2>{{event.nom}}</h2>
+{% if event.fin %}
+<p>Du {{event.debut}} au {{event.fin}} </p>
+{% else %}
+<p> Le {{event.debut}}</p>
+{% endif %}
+
+  </div>
+
+
+</div>
