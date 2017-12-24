@@ -15,4 +15,15 @@ class Evenement(models.Model):
         if not self.fin :
             self.fin = self.debut
         super(Evenement, self).save(*args, **kwargs)
-    
+
+class Oeuvre(models.Model):
+    nom = models.CharField(max_length=20)
+    description = models.CharField(max_length=100)
+    image_description = models.CharField(max_length=20 , blank=True , null=True)
+    image = models.ImageField()
+    def __str__(self):
+        return self.nom
+    def save(self , *args, **kwargs):
+        if not image_description  :
+            image_description = self.nom +'| Jean Pierre Hallet'
+        super(Oeuvre, self).save(*args, **kwargs)

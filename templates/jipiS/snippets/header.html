@@ -7,15 +7,16 @@
 </video> -->
 <div class="full-screen-vid">
   {% load static %}
-  <!-- <video  autoplay poster="posterimage.jpg">
-    <source src="{% static 'vid/jipi.mp4' %}" type="video/mp4">
-    <source src="{% static 'vid/jipi.webm' %}" type="video/webm">
-  </video> -->
+
+  <video  muted autoplay poster="{% static 'img/loading.gif' %}">
+    <source src="{% static 'img/jipi.mp4' %}" type="video/mp4">
+    <source src="{% static 'img/jipi.webm' %}" type="video/webm">
+  </video>
+  <div class="overlay">
+  </div>
+  <img id="img-jipi" src="{% static 'img/img-jipi.png' %}" alt="jeanpierre-hallet">
 </div>
 
-  <div class="imgdiv">
-    <img id="img-jipi" src="{% static 'img/img-jipi.png' %}" alt="jeanpierre-hallet">
-  </div>
 
   <div class="skewbar">
     <!-- ici c'est l'intr le bout ou je met jp cerami.. -->

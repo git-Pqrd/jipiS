@@ -19,6 +19,7 @@
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
+    "hammerjs": "^2.0.8",
     "vanilla-lazyload": "^8.5.2"
   }
 }
