@@ -1,40 +1,10 @@
 {% extends "base.html" %}
-{% block title %}
- Accueil
-{% endblock %}
 {% load render_bundle from webpack_loader %}
 
 
 {% block content %}
-
-{% for item in Evenement %}
-  <h1>item.nom</h1>
-{% endfor %}
-
-{% include "snippets/header.html" %}
-
-{% include "snippets/bio.html" %}
+<h1>hello</h1>
 
 
-{% include "snippets/galerie.html" %}
-
-<div class="motDeFin">
-  <h2>Merci de votre visite !</h2>
-  <p>j'espere vous avoir transmis mon amour du travail bien fait</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptas iure ipsam aspernatur, omnis delectus!</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptas iure ipsam aspernatur, omnis delectus!</p>
-</div>
-
-{% include "./snippets/slider.html" %}
-
-
-
-{% include "snippets/footer.html" %}
-
-
-
-
-
-
-   {% render_bundle 'index' %}
-{% endblock content  %}
+{% render_bundle 'index' %}
+{% endblock content %}
