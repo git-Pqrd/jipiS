@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% load render_bundle from webpack_loader %}
+
+
+<div id="login-block">
+<h1>Bonjour Jipi</h1>
+<h3>Je vais avoir besoin de ton mot de passe et de ton pseudo </h3>
+<form class="" action="" method="post">
+
+<label for="">Identifiant</label>
+<br>
+<input type="text" name="" value="">
+<br>
+<label for="">Mot de passe</label>
+<br>
+<input type="text" name="" value="">
+
+<div class="Connection">Me connecter</div>
+</form>
+<h4><a href="/">Sinon il y a moyen de retourner à la page d'accueil en cliquant ici </a> </h4>
+</div>
+
+
+
+{% render_bundle 'login' %}
+{% endblock %}

@@ -1,9 +1,57 @@
 {% extends "base.html" %}
 {% load render_bundle from webpack_loader %}
-
-
 {% block content %}
-<h1>hello</h1>
+
+
+{% include "snippets/nav.html" %}
+
+
+<div class="dt mw7 center pv4 pv5-m pv6-ns">
+  <div class="dtc v-mid pl3">
+    <p class="lh-copy">
+      This text is vertically aligned middle, no matter what the height of the image is.
+    </p>
+  </div>
+  <div class="dtc v-mid">
+    <img src="http://tachyons.io/img/super-wide.jpg" alt="A bright blue sky" class="mw6 w-80 w-100-l" />
+  </div>
+</div>
+
+
+<div class="tc ph4">
+  <h1 class="f3 f2-m f1-l fw2 black-90 mv3">
+    This is the title
+  </h1>
+  <h2 class="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+    This is the subtitle where additional information can go if you really need it.
+  </h2>
+</div>
+
+
+
+{% include "snippets/gridInspi.html" %}
+
+
+{% include "snippets/video.html" %}
+
+{% include "snippets/gallery.html" %}
+
+<h1 class="center w-40 pv0 f3 fw3 ttu tracked mb4">Contact</h1>
+<p class="center lh-copy-m lh-copy-l w-80 w-30-l gray">
+  Et nous voilà presque à la fin, J'espères que vous avez apprécié mon travail.
+  Si vous voulez en savoir plus, commander, discuter, travailler avec moi, ou toute autre chose, vous pouvez me <b > <a class="light-red link" href="phone:0000000000"> Telephoner au 040000000</a></b> ou vous pouvez <b><a class="light-red link" href="#">m'envoyer un mail</a></b> en cliquant sur le texte en gras. <br>Bien évidemment vous pouvez aussi venir, ci dessus se trouve une liste des <b class="light-red">evenements</b> ou je serai !
+</p>
+
+{% include "snippets/cardSwitch.html" %}
+
+
+{% include "snippets/email.html" %}
+
+
+{% include "snippets/footer.html" %}
+
+
+
 
 
 {% render_bundle 'index' %}

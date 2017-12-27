@@ -20,6 +20,9 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^connection', TemplateView.as_view(template_name="login.html")),
+    url(r'^legal', TemplateView.as_view(template_name="legal.html")),
     url(r'^', TemplateView.as_view(template_name="index.html"))
+
     # url(r'^$', views.ListIndex.as_view() , name='index.html'),
 ]
